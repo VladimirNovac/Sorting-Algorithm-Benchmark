@@ -37,6 +37,7 @@ double[] counting = averageArray(timeElapsedCounting);
 double[] merge = averageArray(timeElapsedMerge);
 ```
 The results were then printed to the console.
+![alt text](https://github.com/VladimirNovac/Sorting-Algorithm-Benchmark/blob/main/jpg/results.jpg "results")
 
 # Benchmark Results
 Sample results table – all values are in milliseconds, and are the average of 10 repeated runs.
@@ -48,3 +49,13 @@ The top row shows the number of random integers tested.
 | Insertion Sort |0.092|0.280|0.701|1.328|2.175|2.939|11.071|18.178|27.610|42.827|64.213|87.376|111.704|
 | Counting Sort  |0.060|0.135|0.261|0.392|0.521|0.668|1.330|2.051|2.759|3.494|4.177|4.917|5.640|
 | Merge Sort     |0.244|0.303|0.577|0.744|0.899|1.137|2.312|3.552|4.740|5.897|7.388|8.405|9.380|
+
+![alt text](https://github.com/VladimirNovac/Sorting-Algorithm-Benchmark/blob/main/jpg/graph.jpg "graph")
+
+# Summary
+All algorithms behave more or less the same when sorting a small number of input data. There is very little difference between them up until the 1500 mark. From then on, we can see a definite difference in their growth.
+As shown in the graph, bubble sort grows at the fastest rate then the other algorithms tested.
+Selection sort comes in second and insertion sort is third.
+Lastly, the counting sort is obscured by merge sort but both show very similar results.
+As it was to be expected, counting sort is the fastest of the five. Due to the small number of input integers (max 10000), merge sort comes in very close to counting sort.
+This test has shown results that are in line with other, more comprehensive tests carried out.
